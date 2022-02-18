@@ -1,0 +1,54 @@
+
+GET http://localhost:3000/api/products
+
+  
+@api = http://localhost:3000/api/products
+@api1 = http://localhost:3000/api/usuarios
+
+{{api}}
+### add
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+    "nickname"   : "hmoreta",
+    "password"   : "hmoreta21",
+    "nombre"     : "Helen Moreta",
+    "cedula"     : "1753699809",
+    "direccion"  : "Parque Ambato",
+    "celular"    : "099579433",
+    "telefono"   : "02615092",
+    "fecha_nac"  : "2001-12-03",
+    "ultima_con" : "2022-02-09",
+    "id_tipo"    :  2
+}
+
+### add a product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "product 3",
+   "description": "some product",
+   "quantity": 10
+}
+
+### get product
+{{api}}/1
+
+### delete product 
+DELETE {{api}}/10
+
+### get count
+{{api}}/count
+
+### update
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "description": "some laptop",
+    "quantity": 20
+}
+

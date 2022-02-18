@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html
+{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1
+{
+    font-weight: 500;
+    font-family: 'Gideon Roman', cursive;
+    font-size: 3.3rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#athe
+{
+    font-family: 'Architects Daughter', cursive;
+    text-transform: lowercase;
+}
+
+h2
+{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+header
+{
+    background-image: url("images/background.png");
+    background-position: top;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    text-align: center;
+    height: 900px;
+    box-sizing: content-box;
+    border-bottom: 2rem solid #ffd3d3ab;
+}
+
+nav
+{
+    /* background-color: aqua; */
+    width: 100%;
+    position: absolute;
+    right: 10px;
+}
+
+nav ul
+{
+    float: right;
+}
+
+nav ul li, nav ul li a
+{
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+    padding: 1.5em;
+    font-size: 1.1em;
+    /* float: right; */
+}
+
+nav ul li a:hover
+{
+    color: #FF5C8D;
+    transition: color 200ms;
+}
+
+.logo{
+    width: 160px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.boton
+{
+    font-size: 1.1rem;
+    color: rgb(87, 87, 87);
+    margin: 3em;
+    padding: 1em;
+    background-color: #ffd3d3ab;
+    /* background-color: #eea4c3; */
+    /* background-color: transparent; */
+    border-radius: 4px;
+    border: 4px dashed rgb(87, 87, 87);
+}
+
+.boton.form
+{
+    font-size: 1em;
+    margin: 0.5em;
+    border-width: 3px;
+}
+
+.boton:hover
+{
+    /* background-color: #f3ebd7; */
+    background-color: #ffd3e5e5;
+    color: #FF5C8D;
+    border-color: #FF5C8D;
+    transition: color 200ms, border-color 200ms, background-color 200ms;
+}
+
+.contenido
+{
+    float: right;
+    margin: 22rem 11rem;
+    width: 40%;
+}
+
+.ingresar
+{
+    color: rgb(87, 87, 87);
+    /* background-color: #FFBBBB; */
+    /* border: 3px dashed #FF5C8D; */
+    /* background-color: #ffd3d3ab; */
+    background-color: transparent;
+    border: 3px dashed rgb(87, 87, 87);
+    border-radius: 4px;
+    padding: 1.5em;
+    margin: 0 1.80em;
+}
+
+.ingresar:hover
+{
+    color: #FF5C8D;
+    border-color: #FF5C8D;
+    transition: color 200ms, border-color 200ms;
+}
+
+.login
+{
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.login form{
+    padding: 5rem 5rem;
+    /* background-color: #FF5C8D; */
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.barra
+{
+     /* background-color: #FF5C8D;  */
+    width: 100%;
+    height: 160px;
+}
+
+.container
+{
+    background: #e6e1db;
+    border-radius: 12px;
+    margin: 4rem auto;
+    width: 50%;
+    padding: 5em;
+    
+}
+
+.form-control
+{
+    margin: 1em 0;
+}
+
+.menu{
+    position: relative;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 200ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.menu-cuenta
+{
+    text-align: center;
+    font-size: 0.88em;
+    background-color: rgb(87, 87, 87);
+    position: absolute;
+    top: calc(100% + 1.98em);
+    right: -2em;
+    border-radius: .25px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.75);
+}
+
+.menu-cuenta a
+{
+    color: whitesmoke;
+}
+
+hr
+{
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.ingresar:hover .menu
+{
+    /* visibility: visible; */
+    opacity: 0.90;
+    transform: translateY(0);
+    transition: opacity 200ms, transform 150ms;
+
+}
