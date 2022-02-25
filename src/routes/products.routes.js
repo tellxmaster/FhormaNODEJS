@@ -50,12 +50,13 @@ router.get('/', (req,res) => {
   });
 })
 
-router.get('/catalogo', (req,res) => {
-  res.render('catalogo',{
-    title: 'Productos'
-  });
-})
-
+// router.get('/catalogo', (req,res) => {
+//   req.getProducts;
+//   res.render('catalogo',{
+//     title: 'Productos'
+//   });
+// })
+router.get('/catalogo', getProducts);
 
 router.get('/ingreso', (req,res) => {
   res.render('login',{

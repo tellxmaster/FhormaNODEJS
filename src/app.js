@@ -29,10 +29,10 @@ app.use("/index", productRoutes);
 app.use("/ingreso", productRoutes);
 app.use("/registro", productRoutes);
 
-app.get('/catalogo', (req,res) => {
-    res.send(req.getProducts);
-    res.render('catalogo',{productos:productos})
-})
+// app.get('/catalogo', (req,res) => {
+//     console.log(req.getProducts.body);
+//     //res.render('catalogo',{productos:productos})
+// })
   
 
 export default app

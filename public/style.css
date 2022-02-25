@@ -189,7 +189,7 @@ nav ul li a:hover
 
 .barra
 {
-     /* background-color: #FF5C8D;  */
+     background-color: #e6e1db; 
     width: 100%;
     height: 160px;
 }
@@ -250,4 +250,46 @@ hr
     transform: translateY(0);
     transition: opacity 200ms, transform 150ms;
 
+}
+
+.menu-catalogo
+{
+    background-color: #d4cabc;
+    display: flex;
+    justify-content: center;
+}
+ .menu-catalogo-item, .menu-catalogo-item a
+{
+    text-align: center;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em 2em;
+}
+
+
+
+
+.caja-productos
+{
+    display: flex;
+    padding: 2em;
+}
+
+.producto
+{
+    text-align: center;
+    width: 20%;
+    margin: 2em;
+    transition: transform 300ms ease-in-out;
+}
+
+.producto img
+{
+    width: 18em;
+}
+
+.producto:hover
+{
+    transform: scale(1.1);
+    transition: transform 200ms;
 }

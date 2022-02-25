@@ -1,6 +1,6 @@
 export const querys = {
     //Gestion Productos
-    getAllProducts: "SELECT TOP(500) * FROM producto",
+    getAllProducts: "SELECT * FROM producto",
     getProducById: "SELECT * FROM producto Where Id = @Id",
     addNewProduct:
       "INSERT INTO producto (nombre, descripcion, stock, imagen) VALUES (@name,@description,@quantity,null);",

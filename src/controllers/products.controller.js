@@ -5,13 +5,20 @@ import { getConnection, querys, sql } from "../database";
 export const getProducts = async (req, res) => {
   try {
     const pool = await getConnection();
-    const result = await pool.request().query(querys.getAllProducts);
-    res.json(result.recordset);
+    const products = await pool.request().query(querys.getAllProducts);
+    console.log({products.recordset});
+    res.render('./catalogo', {products: res, title: 'Ingreso'});
+    //res.json(products);
+  
+    //res.render
+
   } catch (error) {
     res.status(500);
     res.send(error.message);
   }
 };
+
+
 
 export const createNewProduct = async (req, res) => {
   const { name, description } = req.body;
